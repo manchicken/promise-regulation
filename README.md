@@ -25,7 +25,7 @@ const { coalescePromises } = require('@manchicken/promise-regulation')
 const { readdir, unlink } = require('fs/promises')
 const path = require('path')
 
-const getLastModifiedTimeForFolderContents = (folderPath) =>
+const deleteAllFilesInFolder = (folderPath) =>
   Promise.resolve()
     .then(() =>
       readdir(folderPath, { withFileTypes: true })
