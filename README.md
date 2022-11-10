@@ -14,7 +14,25 @@ If you use `Promise.all()` for a bunch of Promises, and one of them rejects, you
 
 ## Usage
 
-### `
+### `protectPromise()`
+
+This function will make the `Promise` you pass in to it always resolve and never reject, but in the event of a caught rejection the resolved value will be `PromiseProtectedRejected` which is an `Error` type.
+
+In this example, you can see that I have a promise which resolves.
+
+```javascript
+// A function which resolves a Promise with a value of 1
+const resolvePromise = () => Promise.resolve(1)
+
+// A function which rejects a Promise with an Error
+const rejectPromise = () => Promise.reject(new Error('Rejected'))
+
+// Let's protect the resolvePromise
+expect(protectPromise(resolvePromise)).resolves.toBe(1)
+
+// Let's protect the rejectPromise
+expect(promiseProtectedRejected(protectPromise(rejectPromise))).resolves.toBeInstanceOf(PromiseProtectedRejected)
+```
 
 ### `coalescePromises()`
 
@@ -42,3 +60,15 @@ const deleteAllFilesInFolder = (folderPath) =>
 
 At the end of this, you'll see the `resolved` entries with all of the `unlink()` results, and you'll also see the `rejected` entries with all of the ones which failed to be deleted.
 
+### `limitedConcurrency()`
+
+This function provides the ability to run a bunch of promises, but limit how many are running concurrently. This can be useful if you have a bunch of promises which are IO bound, and you want to limit the number of concurrent IO operations. It's also super helpful if you are operating in an environment, such as AWS Lambda or other such serverless implementation, where resource constraints get in the way of your ability to run a bunch of promises concurrently.
+
+```javascript
+const { limitedConcurrency } = require('@manchicken/promise-regulation')
+
+const allRegions = someFunctionWhichReturnsABunchOfRegions() // Fake function for demonstration purposes
+
+const operationsToRun = allRegions.map((region) => () => someFunctionWhichReturnsAPromise(region))
+await limitConcurrency(operationToRun, 5)
+```
