@@ -1,5 +1,11 @@
 # Changes
 
+## 0.0.2 (2022-11-10)
+
+### Added
+
+- Added `limitedConcurrency()` to allow for limiting the number of concurrent promises running at a time.
+
 ## 0.0.1 (2022-10-01)
 
 ### Added
