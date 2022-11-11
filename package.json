@@ -6,7 +6,7 @@
   },
   "name": "@manchicken/promise-regulation",
   "description": "This is a simple Node library to help you take a bit more control over your Promises.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "test": "jest"
