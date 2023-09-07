@@ -5,7 +5,7 @@ const {
 
 /**
  * This function will run your list of promises, and then it'll return an object containing a list of which promises resolved and which ones rejected.
- * @param {Array<Promise|Bluebird>} listOfPromises - This is an `Array` of `Promise`s suitable for `Promise.all()`.
+ * @param {Array<Promise>} listOfPromises - This is an `Array` of `Promise`s suitable for `Promise.all()`.
  * @returns {Promise<Object>} - Returns a `Promise` which resolves to an `Object` with properties `resolved` and `rejected`, containing an `Array` of `Promise`s which resolved and rejected, respectively.
  * @exports
  * @public

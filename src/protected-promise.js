@@ -12,7 +12,7 @@ class PromiseProtectedRejected extends Error {
 
 /**
  * Protect a Promise type, regardless of which type of Promise it is.
- * @param {Promise|Bluebird} ward - This is the Promise to protect.
+ * @param {Promise} ward - This is the Promise to protect.
  * @param {Object} options - Options for protection.
  * @param {Boolean} options.verbose - Log verbose messages with regard to this Promise
  * @exports

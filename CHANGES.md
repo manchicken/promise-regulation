@@ -1,5 +1,12 @@
 # Changes
 
+## 0.0.3 (2023-09-07)
+
+### Changed
+
+- Removed dependency on Bluebird promises
+- Fixed tests to work with native promises
+
 ## 0.0.2 (2022-11-10)
 
 ### Added

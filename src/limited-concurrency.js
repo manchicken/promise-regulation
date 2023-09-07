@@ -1,4 +1,3 @@
-const { resolve } = require('bluebird')
 const { coalescePromises } = require('./coalesce-promises')
 const { protectPromise } = require('./protected-promise')
 
