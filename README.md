@@ -4,7 +4,7 @@ This is a simple Node library to help you take a bit more control over your Prom
 
 ## Table of Contents
 
-- [Why?](#Why?)
+- [Why?](#why)
 - [Protected Promises](#protected-promises-with-protectpromise)
 - [Protected Promises Usage](#Protected-Promises-Usage)
 - [Coalescing Promises](#coalescing-promises-with-coalescepromises)
