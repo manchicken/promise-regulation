@@ -2,6 +2,19 @@
 
 This is a simple Node library to help you take a bit more control over your Promises.
 
+## Table of Contents
+
+- [Why?](#Why?)
+- [Protected Promises](#Protected-Promises-with-`protectPromise()`)
+- [Protected Promises Usage](#Protected-Promises-Usage)
+- [Coalescing Promises](#Coalescing-Promises-with-`coalescePromises()`)
+- [Coalescing Promises Usage](#Coalescing-Promises-Usage)
+- [Limiting Concurrent Promise](#Limiting-Concurrent-Promise-Execution-with-`limitedConcurrency()`)
+- [Limiting Concurrent Promise Usage](#Limiting-Concurrent-Promise)
+- [Author and Contributors](#Author-and-Contributors)
+- [License](#License)
+
+
 ## Why?
 
 In large data processing scenarios where you use Promises to help manage asynchronous processes, it can sometimes be really tedious to manage all of your Promise rejects and resolves. Sometimes you just want to have a bunch of Promises which run, and then you'll handle which ones resolve and reject when the processing is done. This module helps with that task.
@@ -12,7 +25,7 @@ This can help you reduce code complexity, and can result in a more fault-toleran
 
 If you use `Promise.all()` for a bunch of Promises, and one of them rejects, you get a rejection from the `Promise.all()` call. This can lead some to add complexity, and all together it can reduce the reliability of large-ish data processing tasks. A Protected Promise is a Promise which has been protected using the `protectPromise()` function. This adds fault tolerance to the individual Promise so that it can be run in a way which still holds on to the rejection context but which allows the list of Promises to all be run.
 
-### Usage
+### Protected Promises Usage
 
 This function will make the `Promise` you pass in to it always resolve and never reject, but in the event of a caught rejection the resolved value will be `PromiseProtectedRejected` which is an `Error` type.
 
@@ -36,7 +49,7 @@ expect(promiseProtectedRejected(protectPromise(rejectPromise))).resolves.toBeIns
 
 When you've got a bunch of promises, and you want to run them all and track which ones fail or succeed, `coalescePromises()` can help you do this.
 
-### Usage
+### Coalescing Promises Usage
 
 In this example, you can use `coalescePromises()` to track which promises resolved successfully, and which were rejected.
 
@@ -66,7 +79,7 @@ At the end of this, you'll see the `resolved` entries with all of the `unlink()`
 
 This function provides the ability to run a bunch of promises, but limit how many are running concurrently. This can be useful if you have a bunch of promises which are IO bound, and you want to limit the number of concurrent IO operations. It's also super helpful if you are operating in an environment, such as AWS Lambda or other such serverless implementation, where resource constraints get in the way of your ability to run a bunch of promises concurrently.
 
-### Usage
+### Limiting Concurrent Promise Usage
 
 ```javascript
 const { limitedConcurrency } = require('@manchicken/promise-regulation')
@@ -82,6 +95,10 @@ await limitConcurrency(operationToRun, 5)
 ## Author and Contributors
 
 - Mike Stemle [(@manchicken)](https://github.com/manchicken)
+
+<a href="https://github.com/manchicken/promise-regulation/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=manchicken/promise-regulation" />
+</a>
 
 ## License
 
