@@ -10,7 +10,7 @@ This is a simple Node library to help you take a bit more control over your Prom
 - [Coalescing Promises](#coalescing-promises-with-coalescepromises)
 - [Coalescing Promises Usage](#Coalescing-Promises-Usage)
 - [Limiting Concurrent Promise](#limiting-concurrent-promise-execution-with-limitedconcurrency)
-- [Limiting Concurrent Promise Usage](#Limiting-Concurrent-Promise)
+- [Limiting Concurrent Promise Usage](#Limiting-Concurrent-Promise-Usage)
 - [Author and Contributors](#Author-and-Contributors)
 - [License](#License)
 
