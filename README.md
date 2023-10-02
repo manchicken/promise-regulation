@@ -5,11 +5,11 @@ This is a simple Node library to help you take a bit more control over your Prom
 ## Table of Contents
 
 - [Why?](#Why?)
-- [Protected Promises](#Protected-Promises-with-`protectPromise()`)
+- [Protected Promises](#protected-promises-with-protectpromise)
 - [Protected Promises Usage](#Protected-Promises-Usage)
-- [Coalescing Promises](#Coalescing-Promises-with-`coalescePromises()`)
+- [Coalescing Promises](#coalescing-promises-with-coalescepromises)
 - [Coalescing Promises Usage](#Coalescing-Promises-Usage)
-- [Limiting Concurrent Promise](#Limiting-Concurrent-Promise-Execution-with-`limitedConcurrency()`)
+- [Limiting Concurrent Promise](#limiting-concurrent-promise-execution-with-limitedconcurrency)
 - [Limiting Concurrent Promise Usage](#Limiting-Concurrent-Promise)
 - [Author and Contributors](#Author-and-Contributors)
 - [License](#License)
