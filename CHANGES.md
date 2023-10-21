@@ -1,5 +1,11 @@
 # Changes
 
+## 0.0.4 (2023-10-21)
+
+### Changed
+
+- Updated dependencies
+
 ## 0.0.3 (2023-09-07)
 
 ### Changed
