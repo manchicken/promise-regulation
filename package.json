@@ -5,7 +5,7 @@
   },
   "name": "@manchicken/promise-regulation",
   "description": "This is a simple Node library to help you take a bit more control over your Promises.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -14,13 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/manchicken/promise-regulation.git"
   },
-  "keywords": [
-    "promise",
-    "regulation",
-    "concurrency",
-    "fault",
-    "tolerance"
-  ],
+  "keywords": ["promise", "regulation", "concurrency", "fault", "tolerance"],
   "author": "Mike Stemle <manchicken@manchicken.com>",
   "license": "BSD-3-Clause",
   "bugs": {
