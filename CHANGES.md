@@ -1,5 +1,13 @@
 # Changes
 
+## 0.0.5 (2023-12-29)
+
+This is a maintenance release.
+
+### Changed
+
+- Updated dependencies
+
 ## 0.0.4 (2023-10-21)
 
 ### Changed
