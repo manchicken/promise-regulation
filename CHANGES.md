@@ -1,5 +1,9 @@
 # Changes
 
+## 0.0.6 (2024-08-01)
+
+Minor maintenance release
+
 ## 0.0.5 (2023-12-29)
 
 This is a maintenance release.
