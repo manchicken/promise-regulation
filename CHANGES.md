@@ -1,5 +1,14 @@
 # Changes
 
+## 0.0.7 (2024-10-05)
+
+Minor maintenance release
+
+### Changed
+
+- Updated dependencies
+- Enabled test coverage calculations
+
 ## 0.0.6 (2024-08-01)
 
 Minor maintenance release
