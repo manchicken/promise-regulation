@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
-      - run: npm install
+      - run: npm install --ignore-scripts
       - run: npm test
 
   publish-npm:
@@ -32,7 +32,6 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
-      - run: npm install
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPMJS_TOKEN}}
+      - run: npm install --ignore-scripts
+      - run: rm -rf .github
+      - run: npm publish --provenance --access public
