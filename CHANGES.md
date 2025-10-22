@@ -1,5 +1,14 @@
 # Changes
 
+## 0.0.8 (2025-10-22)
+
+Minor maintenance release
+
+### Changed
+
+- GitHub Actions updates for npm changes
+- Updated dependencies
+
 ## 0.0.7 (2024-10-05)
 
 Minor maintenance release
