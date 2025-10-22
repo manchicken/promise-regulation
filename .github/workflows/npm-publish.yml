@@ -19,8 +19,9 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
-          registry-url: https://registry.npmjs.org/
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org/'
+      - run: npm install -g npm@latest
       - run: npm install --ignore-scripts
       - run: rm -rf .github
       - run: npm publish --access public
