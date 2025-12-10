@@ -1,5 +1,13 @@
 # Changes
 
+## 0.0.9 (2025-12-10)
+
+Minor maintenance release
+
+### Changed
+
+- Updated dependencies
+
 ## 0.0.8 (2025-10-22)
 
 Minor maintenance release

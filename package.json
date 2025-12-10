@@ -2,7 +2,7 @@
   "type": "commonjs",
   "name": "@manchicken/promise-regulation",
   "description": "This is a simple Node library to help you take a bit more control over your Promises.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "index.js",
   "scripts": {
     "test": "jest"
