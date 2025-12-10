@@ -8,6 +8,10 @@ In large data processing scenarios where you use Promises to help manage asynchr
 
 This can help you reduce code complexity, and can result in a more fault-tolerant data processing program.
 
+> [!info]
+> Large volumes of rejected promises can give the appearance that the promises are not in fact being limited.
+> Use adequate error detection to prevent confusion.
+
 ## Protected Promises with `protectPromise()`
 
 If you use `Promise.all()` for a bunch of Promises, and one of them rejects, you get a rejection from the `Promise.all()` call. This can lead some to add complexity, and all together it can reduce the reliability of large-ish data processing tasks. A Protected Promise is a Promise which has been protected using the `protectPromise()` function. This adds fault tolerance to the individual Promise so that it can be run in a way which still holds on to the rejection context but which allows the list of Promises to all be run.
