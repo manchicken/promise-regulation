@@ -8,7 +8,7 @@ In large data processing scenarios where you use Promises to help manage asynchr
 
 This can help you reduce code complexity, and can result in a more fault-tolerant data processing program.
 
-> [!info]
+> [!WARNING]
 > Large volumes of rejected promises can give the appearance that the promises are not in fact being limited.
 > Use adequate error detection to prevent confusion.
 
