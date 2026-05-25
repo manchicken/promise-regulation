@@ -1,5 +1,13 @@
 # Changes
 
+## 0.0.10 (2026-05-12)
+
+Minor maintenance release
+
+### Changed
+
+- Updated dependencies (includes security updates)
+
 ## 0.0.9 (2025-12-10)
 
 Minor maintenance release
